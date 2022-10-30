@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>la cafeteria</title>
+    <!-- BOOTSRAP -->
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<!--CSS MAIN-->
     <link rel="stylesheet" href="../css/estilos.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet"> 
 
@@ -15,48 +21,39 @@
         <h1>Una cafeteria para todos</h1>
         
         <div class="menu1"div>
-            <nav>
-                <ul class="menu"> 
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./galeria.html">galeria</a></li>
-                    <li><a href="./nosotros.html">nosotros</a></li>
-                    <li><a href="./tipos de cafe.html">Tipos de cafe</a></li>
-                    <li><a href="./contacto.html">contacto</a></li>
-                
-                <ul>
-
-             <nav>
+            <nav class="navbar navbar-expand-lg colored">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="../index.html">Inicio</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link active" aria-current="page" href="./galeria.html">galeria</a>
+                      <a class="nav-link" href="./nosotros.html">nosotros</a>
+                      <a class="nav-link" href="./tipos de cafe.html">tiposdecafe</a>
+                      <a class="nav-link" href="./contacto.html">contacto</a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </nav>
         </div>
             
     </header>
 
         <main>
             <h2 class="title">Nuestra historia</h2>
-            <section class="origen"div>
-                <article>
-            
-                    
-                    <div class="parrafo"div>
-                        <img src="../imagenes/historiacafe.jpg" width="500">
-                                 
-                        <p>el cafe llego primero a la colina holandesa de surinam en 1718<p>
-                    
-                        </p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam perferendis mollitia, at excepturi asperiores voluptatibus soluta esse dolor reprehenderit repellat laborum quibusdam eos ab aut veniam maxime maiores fugit quis<p>
-
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, voluptatem veniam illo autem recusandae animi nesciunt minima soluta nulla inventore. Quam sunt debitis consequatur aperiam dolorum reiciendis possimus. Id, ullam.</p>
-                    <div>
-                </article>
-            </section>
-            <section class="origen2"div>
-                <div class="parrafo2"div>
-                    <article>
-                        <img src="../imagenes/histcafe.jpg" width="500">
-                        <p>Según se cuenta, este tipo de café tiene su origen en las tropas americanas que se asentaron en Italia durante esos tiempos de guerra. Los soldados pedían un café más suave y ligero que los típicos espresso y ristretto italianos, pues estaban acostumbrados al café de filtro. </p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis dolorem nulla velit animi recusandae numquam ab, sequi laboriosam sapiente quis aperiam architecto dicta labore hic consectetur quaerat quia inventore quod.</p>
-                    </article>
+            <div class="card text-bg-dark">
+                <img src="../imagenes/banner1.jpg" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Historia</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores iusto deleniti nulla pariatur fuga officia. Consequatur praesentium distinctio labore, ullam adipisci, error quas deserunt dolores, nihil amet laboriosam in. Officia?.</p>
+                  <p class="card-text"><small>Last updated 3 mins ago</small></p>
                 </div>
+              </div>
             
-            </section>
+           
         </main>
         
         <footer class="footer">

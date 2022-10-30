@@ -1,7 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-  
+    box-sizing: border-box;
+   
 }
 
 
@@ -33,11 +34,11 @@ align-items: center;
 }
 /*BARRA DE NAVEGACION*/
 
-.nav{
+.colored{
     
 height: 10%;
 width: 100%;
-background-color: orange;
+background-color: rgb(148, 112, 75);
 float:none;
 display:flex;
 justify-content: center;
@@ -85,7 +86,7 @@ align-items: center;
  /*fin barra de navegacion*/
 
  .marco{
-    width: 700px;
+    max-width: 600px;
     height: auto;
     margin: 50px auto 0;
     overflow: hidden;
@@ -132,6 +133,9 @@ h2{
 }
  
 /*articulos*/
+.card{
+    display: flex;
+}
 
 .sectioncontainer{
     display: flex;
@@ -163,64 +167,17 @@ h2{
 
 .footer{
       
-    height: 10%;
+    height: 50px;
     width: 100%;
     background-color: black;
-    position:absolute;
+    position: sticky;
     color:white;
     display:flex;
     justify-content: center;
     align-items: center;
     
 }
-.origen{
-    margin: 5px;
-    padding: 30px;
-    margin-bottom: 50px;
-} 
-.origen2{
-   
-    margin: 5px;
-    padding: 30px;
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: right;
-    border-radius: 30px;
-}
 
-.parrafo{
-    z-index: 1;
-    width: 540px;
-    height:400px;
-    padding: 20px 30px;
-    font-size: 15px;
-    line-height: 1.5;
-    box-shadow: 1px 5px 25px;
-    border-radius: 5px;
-    background-color:#538a8a;
-
-}
-.parrafo2{
-    z-index: 1;
-    width: 540px;
-    height: 350px;
-    padding: 20px 30px;
-    font-size: 15px;
-    line-height: 1.5;
-    box-shadow: 1px 5px 25px;
-    border-radius: 5px;
-    background-color:#538a8a;
-
-
-}
-.parrafo2 img{
-    width: 400px;
-    border-radius: 5px;
-    float: right;
-    margin-right: 15px;
-    text-align: justify;
-
-}
 .parrafo img{
     width: 400px;
     border-radius: 5px;
@@ -229,9 +186,11 @@ h2{
     text-align: justify;
 }
 
+
 /*formulario*/
 
 .form-register{
+    max-width: 100%;
     width: 450px;
     margin: auto;
     background-color: #d37d5e;
@@ -255,6 +214,7 @@ h2{
  }
 
  textarea{
+    max-width: 100%;
     height: 100px;
     width: 400px;
  }
@@ -269,36 +229,29 @@ h2{
  button:hover{
     cursor: pointer;
  }
+
 /*fin formulario*/
+
+.tiposdecafe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .tiposdecafe img{
     display: flex;
-    margin: auto;
-    opacity: 1;
-    height: 500px;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    opacity: 50%;
+    min-height: 500px;
     box-shadow: 1px 5px 25px;
     border-radius: 10%;
     padding: 20px;
+   
  }
 
- .cafecontainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    border: 2px solid hsl(42, 18%, 19%);
-    height: 180px;
-    width: 300px;
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 1px 5px 25px;
-    background-image: url(/imagenes/fond.webp);
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
-    
-    
- }
-    
+
  
 
  .gallery{
